@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.1 on win32)" generated="2025-02-28T09:02:04.508393" rpa="false" schemaversion="5">
+<suite id="s1" name="Patient" source="C:\Users\User\Documents\Greenlife-patient(automation)\patient.robot">
+<test id="s1-t1" name="Scenario: Login as Pharmacist in GreenLife" line="5">
+<kw name="Given User Test Website">
+<kw name="User Opens Browser and Go to URL" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-28T09:02:06.879003" level="INFO">Opening browser 'chrome' to base url 'https://patient-stg.greenlifeclinics.com.au'.</msg>
+<arg>${url-stg}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-28T09:02:06.878377" elapsed="5.604287"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-28T09:02:12.483241" elapsed="0.042514"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-28T09:02:15.527337" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-28T09:02:12.526586" elapsed="3.001033"/>
+</kw>
+<status status="PASS" start="2025-02-28T09:02:06.875084" elapsed="8.652846"/>
+</kw>
+<status status="PASS" start="2025-02-28T09:02:06.873642" elapsed="8.654455"/>
+</kw>
+<kw name="When User Is In The Welcome Page">
+<kw name="Welcome Page" owner="keywords">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>//button[normalize-space()='Register']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-28T09:02:15.529949" elapsed="0.321090"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-28T09:02:18.852301" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-28T09:02:15.851549" elapsed="3.000976"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-28T09:02:18.853395" level="INFO">Clicking element '//button[normalize-space()='Register']'.</msg>
+<arg>//button[normalize-space()='Register']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-28T09:02:18.852957" elapsed="0.147677"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-28T09:02:22.001625" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-28T09:02:19.001016" elapsed="3.000796"/>
+</kw>
+<status status="PASS" start="2025-02-28T09:02:15.529460" elapsed="6.472682"/>
+</kw>
+<status status="PASS" start="2025-02-28T09:02:15.528842" elapsed="6.473474"/>
+</kw>
+<kw name="Then User Click Login Now">
+<kw name="Login Now" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-28T09:02:22.004757" level="INFO">Clicking element '(//span[@class='font-semibold'])[1]'.</msg>
+<arg>(//span[@class='font-semibold'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-28T09:02:22.004305" elapsed="0.154258"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-28T09:02:25.159898" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-28T09:02:22.158966" elapsed="3.001149"/>
+</kw>
+<status status="PASS" start="2025-02-28T09:02:22.003640" elapsed="3.156692"/>
+</kw>
+<status status="PASS" start="2025-02-28T09:02:22.002955" elapsed="3.157554"/>
+</kw>
+<kw name="And User Click Register Now">
+<kw name="Register Now" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-28T09:02:25.162701" level="INFO">Clicking element '//span[@class='font-semibold cursor-pointer']'.</msg>
+<arg>//span[@class='font-semibold cursor-pointer']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-28T09:02:25.162318" elapsed="0.142444"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-28T09:02:28.305975" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-28T09:02:25.305276" elapsed="3.000897"/>
+</kw>
+<status status="PASS" start="2025-02-28T09:02:25.161829" elapsed="3.144555"/>
+</kw>
+<status status="PASS" start="2025-02-28T09:02:25.161195" elapsed="3.145367"/>
+</kw>
+<kw name="And User Click Register Button">
+<kw name="Register Button" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-28T09:02:28.309440" level="INFO">Clicking element '(//*[name()='svg'][@class='size-7 cursor-pointer'])[1]'.</msg>
+<arg>(//*[name()='svg'][@class='size-7 cursor-pointer'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-28T09:02:28.308916" elapsed="0.140289"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-28T09:02:31.450898" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-28T09:02:28.449877" elapsed="3.001217"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>//button[normalize-space()='Register']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-02-28T09:02:31.451466" elapsed="0.294181"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-28T09:02:34.746634" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-28T09:02:31.746034" elapsed="3.000775"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-28T09:02:34.747554" level="INFO">Clicking element '//button[normalize-space()='Register']'.</msg>
+<arg>//button[normalize-space()='Register']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-28T09:02:34.747179" elapsed="0.137337"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-28T09:02:37.885868" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-28T09:02:34.885193" elapsed="3.000853"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-28T09:02:37.886754" level="INFO">Clicking element '(//select[@class='block w-full bg-gray-50 border rounded-lg h-12 px-2 text-gray-500 focus:outline-none focus:border-[#333333] focus:ring-1 focus:ring-[#333333]'])[1]'.</msg>
+<arg>(//select[@class='block w-full bg-gray-50 border rounded-lg h-12 px-2 text-gray-500 focus:outline-none focus:border-[#333333] focus:ring-1 focus:ring-[#333333]'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-28T09:02:37.886392" elapsed="0.194810"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-02-28T09:02:38.082431" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg time="2025-02-28T09:02:38.082627" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg time="2025-02-28T09:02:38.082775" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<arg>NONE</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-02-28T09:02:38.081656" elapsed="0.037369"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-02-28T09:02:38.120387" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg time="2025-02-28T09:02:38.120587" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg time="2025-02-28T09:02:38.120716" level="INFO">Releasing special key ENTER.</msg>
+<arg>NONE</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-02-28T09:02:38.119522" elapsed="0.037091"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-28T09:02:41.158169" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-28T09:02:38.157480" elapsed="3.000920"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-28T09:02:41.159320" level="INFO">Typing text 'astrostud@mailinator.com' into text field '//input[@placeholder='Email']'.</msg>
+<arg>//input[@placeholder='Email']</arg>
+<arg>${patientNewEmail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-28T09:02:41.158833" elapsed="0.257168"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-28T09:02:44.417100" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-28T09:02:41.416340" elapsed="3.000958"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-28T09:02:44.418093" level="INFO">Clicking element '//button[normalize-space()='Sign Up']'.</msg>
+<arg>//button[normalize-space()='Sign Up']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-28T09:02:44.417669" elapsed="0.144142"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-28T09:02:59.563353" level="INFO">Slept 15 seconds.</msg>
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-28T09:02:44.562275" elapsed="15.001389"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-28T09:02:59.564774" level="INFO">Clicking element '(//span[@class='font-semibold'])[1]'.</msg>
+<arg>(//span[@class='font-semibold'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-28T09:02:59.564277" elapsed="0.117636"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-28T09:03:02.682968" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-28T09:02:59.682284" elapsed="3.000881"/>
+</kw>
+<status status="PASS" start="2025-02-28T09:02:28.308276" elapsed="34.375108"/>
+</kw>
+<status status="PASS" start="2025-02-28T09:02:28.307271" elapsed="34.376239"/>
+</kw>
+<kw name="And User Click Forgot Password">
+<kw name="Forgot Password" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-28T09:03:02.686434" level="INFO">Clicking element '//p[@class='font-light text-sm']'.</msg>
+<arg>//p[@class='font-light text-sm']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-28T09:03:02.685963" elapsed="0.172837"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-28T09:03:05.860528" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-28T09:03:02.859506" elapsed="3.001217"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-28T09:03:05.861441" level="INFO">Clicking element '//button[normalize-space()='×']'.</msg>
+<arg>//button[normalize-space()='×']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-28T09:03:05.861073" elapsed="0.144192"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-28T09:03:09.006348" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-28T09:03:06.005689" elapsed="3.000913"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-28T09:03:09.007553" level="INFO">Clicking element '//p[@class='font-light text-sm']'.</msg>
+<arg>//p[@class='font-light text-sm']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-28T09:03:09.007085" elapsed="0.132184"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-28T09:03:12.140642" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-28T09:03:09.139764" elapsed="3.001085"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-28T09:03:12.141701" level="INFO">Typing text 'astrostud@mailinator.com' into text field '//input[@id='email']'.</msg>
+<arg>//input[@id='email']</arg>
+<arg>${patientNewEmail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-28T09:03:12.141220" elapsed="0.218803"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-28T09:03:15.361415" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-28T09:03:12.360503" elapsed="3.001106"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-28T09:03:15.362335" level="INFO">Clicking element '//button[normalize-space()='Send']'.</msg>
+<msg time="2025-02-28T09:03:15.652715" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-28T09:03:15.654707" level="FAIL">Element with locator '//button[normalize-space()='Send']' not found.</msg>
+<arg>//button[normalize-space()='Send']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-02-28T09:03:15.361968" elapsed="0.307891">Element with locator '//button[normalize-space()='Send']' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-02-28T09:03:15.670281" elapsed="0.000088"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//button[normalize-space()='Cancel']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-28T09:03:15.670684" elapsed="0.000070"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-02-28T09:03:15.670987" elapsed="0.000080"/>
+</kw>
+<status status="FAIL" start="2025-02-28T09:03:02.685284" elapsed="12.986451">Element with locator '//button[normalize-space()='Send']' not found.</status>
+</kw>
+<status status="FAIL" start="2025-02-28T09:03:02.684177" elapsed="12.987831">Element with locator '//button[normalize-space()='Send']' not found.</status>
+</kw>
+<kw name="And User Click Login Button">
+<status status="NOT RUN" start="2025-02-28T09:03:15.672731" elapsed="0.000114"/>
+</kw>
+<kw name="And User Click Notification">
+<status status="NOT RUN" start="2025-02-28T09:03:15.673423" elapsed="0.000090"/>
+</kw>
+<kw name="And User Click Book a Consult">
+<status status="NOT RUN" start="2025-02-28T09:03:15.673915" elapsed="0.000057"/>
+</kw>
+<kw name="And User Click Homepage">
+<status status="NOT RUN" start="2025-02-28T09:03:15.675011" elapsed="0.000081"/>
+</kw>
+<kw name="And User Click Order History">
+<status status="NOT RUN" start="2025-02-28T09:03:15.675598" elapsed="0.000069"/>
+</kw>
+<kw name="And User Click Settings">
+<status status="NOT RUN" start="2025-02-28T09:03:15.676157" elapsed="0.000085"/>
+</kw>
+<kw name="And User Click Prescription Source">
+<status status="NOT RUN" start="2025-02-28T09:03:15.676858" elapsed="0.000091"/>
+</kw>
+<kw name="And User Click Store Location">
+<status status="NOT RUN" start="2025-02-28T09:03:15.677393" elapsed="0.000064"/>
+</kw>
+<kw name="And User Click Change Password">
+<status status="NOT RUN" start="2025-02-28T09:03:15.677986" elapsed="0.000062"/>
+</kw>
+<kw name="And User Click Delete Account">
+<status status="NOT RUN" start="2025-02-28T09:03:15.678576" elapsed="0.000075"/>
+</kw>
+<kw name="And User Click Logout">
+<status status="NOT RUN" start="2025-02-28T09:03:15.679686" elapsed="0.000085"/>
+</kw>
+<status status="FAIL" start="2025-02-28T09:02:06.871690" elapsed="68.809297">Element with locator '//button[normalize-space()='Send']' not found.</status>
+</test>
+<status status="FAIL" start="2025-02-28T09:02:04.513010" elapsed="71.170616"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Patient">Patient</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

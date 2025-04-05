@@ -1,0 +1,2 @@
+first_name,last_name,status,phone_number,email,name,gender,date_of_birth,medicare_number,medicare_irn,residential_address,dva_card_type,dva_card_number,concession_card_type,concession_card_number
+John,Doe,active,61212345678,johndoe@example.com,John Doe,Man,05/22/2000,1EG4TE5MK73,1234567890,"8 Queen Street, Mona Vale, New South Wales",Gold Card,QSS12345,Commonwealth Seniors Health Card,111 111 111A
